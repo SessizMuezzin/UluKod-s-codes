@@ -1,0 +1,9 @@
+<program> ::= <statement_list>
+<statement_list> ::= <statement> | <statement> <statement_list>
+<statement> ::= <assignment> | <if_stmt> | <loop>
+<assignment> ::= <id> "=" <expr> ";"
+<expr> ::= <term> | <term> "+" <expr> | <term> "-" <expr>
+<term> ::= <factor> | <factor> "*" <term> | <factor> "/" <term>
+<factor> ::= <number> | <id> | "(" <expr> ")"
+<id> ::= <letter> { <letter> | <digit> }
+<number> ::= <digit> { <digit> }
